@@ -2,7 +2,9 @@ let facemesh;
 let predictions = [];
 let video;
 
-const setup = () =>  {
+
+function setup() {
+  console.log(123);
   createCanvas(windowWidth, windowHeight,);
 
   video = createCapture(VIDEO);
@@ -17,7 +19,7 @@ const setup = () =>  {
   video.hide();
 }
 
-const draw = () => {
+function draw() {
   background(0);
   drawKeypoints();
 }
